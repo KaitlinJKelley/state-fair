@@ -2,9 +2,9 @@ const contentTarget = document.querySelector(".food")
 const eventHub = document.querySelector("#state-fair")
 
 eventHub.addEventListener("foodTicketPurchased", customEvent => {
-    return contentTarget.innerHTML = 
+    return contentTarget.innerHTML += 
     `
-        <div class="person"></div>
+        <div class="person eater"></div>
     `
 })
 
