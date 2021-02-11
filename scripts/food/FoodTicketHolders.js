@@ -8,6 +8,9 @@ eventHub.addEventListener("foodTicketPurchased", customEvent => {
     `
 })
 
-export const FoodTicketHolders = () => {
-  
-}
+eventHub.addEventListener("FullPackageTicketPurchased", event => {
+    return contentTarget.innerHTML += 
+    `
+        <div class="person bigSpender"></div>
+    `
+})
