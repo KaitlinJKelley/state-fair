@@ -6,3 +6,10 @@ eventHub.addEventListener("SideShowTicketPurchased", event => {
     <div class="person gawker"></div>
     `
 })
+
+eventHub.addEventListener("FullPackageTicketPurchased", event => {
+    return contentTarget.innerHTML += 
+    `
+        <div class="person bigSpender"></div>
+    `
+})

@@ -7,3 +7,10 @@ eventHub.addEventListener("gameTicketPurchased", customEvent => {
         <div class="person player"></div>
     `
 })
+
+eventHub.addEventListener("FullPackageTicketPurchased", event => {
+    return contentTarget.innerHTML += 
+    `
+        <div class="person bigSpender"></div>
+    `
+})
